@@ -2,7 +2,6 @@ const knex = require('../conexao');
 const bcrypt = require('bcrypt');
 
 const cadastrarGestor = async (req, res) => {
-    const { usuario } = req;
     const { gestor, email, senha } = req.body;
 
     if (!gestor) {
